@@ -222,6 +222,7 @@ void drawWinScreen(String msg)
   updateInfo("YOU WIN!!!");
 }
 
+// 处理游戏进程相关
 void processGameState()
 {
   if (gameState == 0) // 菜单
@@ -286,11 +287,9 @@ void processGameState()
     readButton();
   }
 }
-
 /***** 游戏进程相关（end） *****/
 
 /***** 菜单相关 *****/
-
 void _createMenu(TFT_eSprite *menu, String text, int mode)
 {
   menu->setTextSize(4);
